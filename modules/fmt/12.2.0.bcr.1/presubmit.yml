@@ -18,7 +18,6 @@ tasks:
     bazel: ${{ bazel }}
     build_targets:
       - '@fmt//:fmt'
-      - '@fmt//:package_metadata'
   windows_test:
     name: Verify build targets
     platform: ${{ windows_test }}
@@ -27,4 +26,3 @@ tasks:
       - --cxxopt=/utf-8
     build_targets:
       - '@fmt//:fmt'
-      - '@fmt//:package_metadata'
